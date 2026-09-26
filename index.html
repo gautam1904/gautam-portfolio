@@ -1,0 +1,362 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Gautam | CSE Student</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #0f172a;
+            color: #e2e8f0;
+            line-height: 1.6;
+        }
+
+        nav {
+            position: sticky;
+            top: 0;
+            background: #0f172a;
+            border-bottom: 1px solid #334155;
+            padding: 18px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 100;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #38bdf8;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 25px;
+        }
+
+        nav a {
+            color: #cbd5e1;
+            text-decoration: none;
+        }
+
+        nav a:hover {
+            color: #38bdf8;
+        }
+
+        section {
+            padding: 90px 8%;
+        }
+
+        .hero {
+            min-height: 90vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .hero p:first-child {
+            color: #38bdf8;
+            font-size: 18px;
+        }
+
+        h1 {
+            font-size: clamp(45px, 8vw, 80px);
+            margin: 10px 0;
+            color: white;
+        }
+
+        .hero h2 {
+            font-size: clamp(25px, 4vw, 40px);
+            color: #94a3b8;
+            margin-bottom: 20px;
+        }
+
+        .hero-description {
+            max-width: 600px;
+            color: #94a3b8;
+            font-size: 18px;
+        }
+
+        .buttons {
+            margin-top: 30px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 12px 22px;
+            margin-right: 10px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: bold;
+            border: 1px solid #38bdf8;
+        }
+
+        .primary {
+            background: #38bdf8;
+            color: #0f172a;
+        }
+
+        .secondary {
+            color: #38bdf8;
+        }
+
+        .secondary:hover {
+            background: #38bdf8;
+            color: #0f172a;
+        }
+
+        h2.section-title {
+            font-size: 35px;
+            margin-bottom: 30px;
+            color: white;
+        }
+
+        .about-text {
+            max-width: 750px;
+            color: #94a3b8;
+            font-size: 18px;
+        }
+
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        .skill {
+            background: #1e293b;
+            border: 1px solid #334155;
+            padding: 12px 20px;
+            border-radius: 8px;
+        }
+
+        .projects {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .project {
+            background: #1e293b;
+            border: 1px solid #334155;
+            border-radius: 12px;
+            padding: 25px;
+            transition: transform 0.2s;
+        }
+
+        .project:hover {
+            transform: translateY(-5px);
+        }
+
+        .project h3 {
+            color: #38bdf8;
+            margin-bottom: 10px;
+        }
+
+        .project p {
+            color: #94a3b8;
+        }
+
+        .contact {
+            text-align: center;
+        }
+
+        .contact p {
+            color: #94a3b8;
+            margin-bottom: 20px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 30px;
+            border-top: 1px solid #334155;
+            color: #64748b;
+        }
+
+        @media (max-width: 600px) {
+            nav {
+                padding: 15px 5%;
+            }
+
+            nav ul {
+                gap: 12px;
+                font-size: 14px;
+            }
+
+            section {
+                padding: 70px 5%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav>
+        <div class="logo">Gautam.</div>
+
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+
+    <!-- Hero Section -->
+    <section class="hero">
+
+        <p>Hello, I'm</p>
+
+        <h1>Gautam</h1>
+
+        <h2>CSE Student • Future Developer</h2>
+
+        <p class="hero-description">
+            I'm a first-year Computer Science student interested in
+            programming, AI/ML and building useful software.
+            I'm currently learning C, Python, HTML and CSS.
+        </p>
+
+        <div class="buttons">
+            <a href="#projects" class="btn primary">
+                View Projects
+            </a>
+
+            <a href="https://github.com/" target="_blank" class="btn secondary">
+                GitHub
+            </a>
+        </div>
+
+    </section>
+
+
+    <!-- About -->
+    <section id="about">
+
+        <h2 class="section-title">About Me</h2>
+
+        <p class="about-text">
+            I'm currently pursuing Computer Science and Engineering
+            with a focus on AI/ML.
+
+            I'm at the beginning of my programming journey and
+            continuously learning new technologies by building
+            projects and experimenting with code.
+
+            My long-term goal is to become a strong software
+            developer and work on meaningful technology.
+        </p>
+
+    </section>
+
+
+    <!-- Skills -->
+    <section id="skills">
+
+        <h2 class="section-title">Skills</h2>
+
+        <div class="skills">
+
+            <div class="skill">C</div>
+            <div class="skill">HTML</div>
+            <div class="skill">CSS</div>
+            <div class="skill">Python (Learning)</div>
+            <div class="skill">Git & GitHub</div>
+            <div class="skill">AI/ML (Learning)</div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Projects -->
+    <section id="projects">
+
+        <h2 class="section-title">Projects</h2>
+
+        <div class="projects">
+
+            <div class="project">
+
+                <h3>Personal Portfolio</h3>
+
+                <p>
+                    My first personal portfolio website,
+                    built using HTML and CSS.
+                </p>
+
+            </div>
+
+
+            <div class="project">
+
+                <h3>C Programming</h3>
+
+                <p>
+                    Small programs and experiments created
+                    while learning C programming fundamentals.
+                </p>
+
+            </div>
+
+
+            <div class="project">
+
+                <h3>More Coming Soon</h3>
+
+                <p>
+                    I'm currently learning Python and
+                    building new projects. More projects
+                    will be added here.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Contact -->
+    <section id="contact" class="contact">
+
+        <h2 class="section-title">Let's Connect</h2>
+
+        <p>
+            I'm always interested in learning, collaborating
+            and building something new.
+        </p>
+
+        <!-- Replace these with your actual links -->
+        <a href="https://github.com/" target="_blank" class="btn primary">
+            GitHub
+        </a>
+
+    </section>
+
+
+    <!-- Footer -->
+    <footer>
+
+        © 2026 Gautam. Built with HTML & CSS.
+
+    </footer>
+
+</body>
+</html>
+```
